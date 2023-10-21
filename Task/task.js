@@ -1,11 +1,7 @@
-// Function to validate the form
 function validateForm() {
-    // Add your validation logic here
-    // You can use JavaScript to check if fields are filled correctly
-    return true; // Return true if form is valid
+    return true;
 }
 
-// Function to display a popup with selected values
 function displayPopup() {
     var popup = document.getElementById("popup");
     var content = document.getElementById("popupContent");
@@ -15,7 +11,6 @@ function displayPopup() {
     content.innerHTML += "Date of Birth: " + document.getElementById("dob").value + "<br>";
     content.innerHTML += "Country: " + document.getElementById("country").value + "<br>";
 
-    // Add code to get and display the selected gender
     var genderCheckboxes = document.getElementsByName("gender");
     content.innerHTML += "Gender: ";
     for (var i = 0; i < genderCheckboxes.length; i++) {
@@ -32,14 +27,12 @@ function displayPopup() {
     popup.style.display = "block";
 }
 
-// Function to close the popup and reset the form
 function closePopup() {
     var popup = document.getElementById("popup");
     popup.style.display = "none";
     document.getElementById("surveyForm").reset();
 }
 
-// Function to reset the form
 function resetForm() {
     document.getElementById("surveyForm").reset();
 }
