@@ -16,17 +16,14 @@ public class Program2 {
 
         int result = 0;
         int prevValue = 0;
-
         for (int i = s.length() - 1; i >= 0; i--)
         {
             int value = romanValues.get(s.charAt(i));
-
             if (value < prevValue) {
                 result -= value;
             } else {
                 result += value;
             }
-
             prevValue = value;
         }
         return result;

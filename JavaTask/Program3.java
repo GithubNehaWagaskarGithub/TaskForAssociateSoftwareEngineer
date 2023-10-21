@@ -7,7 +7,6 @@ public class Program3 {
 
         sentence = sentence.replaceAll(" ", "").toLowerCase();
 
-
         boolean[] letterPresent = new boolean[26];
 
         for (int i = 0; i < sentence.length(); i++) {
@@ -23,7 +22,6 @@ public class Program3 {
                 return false;
             }
         }
-
         return true;
     }
 
